@@ -1,0 +1,115 @@
+@import "normalize";
+@import "layout";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic-ext');
+
+
+body {
+	font: 300 16px/1.2 "Ubuntu", sans-serif;
+	background: #003056 url("../img/music-3425034.jpg") no-repeat 100% / cover;
+	color: #3e3e3e;
+}
+/* Layout */
+
+.ba-container {
+	max-width: 1200px;
+	padding: 50px 20px;
+}
+
+
+/* Typography */
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+.ba-playlist {
+	background: #e3e3e3;
+	border-radius: 8px;
+	padding: 25px 15px;
+	max-width: 450px;
+	margin: 0 auto;
+	&__title {
+		text-align: center;
+		font-weight: 500;
+		margin: 0 0 25px;
+	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.ba-tune {
+	& {
+		border-top: 1px solid #000;
+		padding-top: 10px;
+		margin-top: 10px;
+	}
+	&__top {
+		font-size: 80%;
+		margin-bottom: 5px;
+		color: #a4a3a9;
+	}
+	&__duration {
+		display: inline-block;
+		padding-right: 10px;
+		margin-right: 6px;
+		border-right: 1px solid #3e3e3e;
+	}
+	&__song {
+		font-weight: 500;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+	&__like {
+		margin-top: 10px;
+		width: 20px;
+		height: 20px;
+		float: right;
+		fill: #ed5e75;
+		cursor: pointer;
+		&:hover {
+			fill: #3e3e3e
+		}
+	}
+}
